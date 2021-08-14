@@ -13,20 +13,29 @@
                 width: 25%;
                 justify-content: space-between;
                 text-align: center;
-                span{
-                    display: block;
-                    font-size: 2em;
-                    margin-bottom: .5em;
-                }
-                a{
-                    font-size: 1.2em;
+                .more{
+                    display: inline-block;
+                    width: 100%;
                     color: #999999;
+                    span:nth-child(1){
+                        display: block;
+                        font-size: 2em;
+                        margin-bottom: .5em;
+                    }
+                    span:nth-child(2){
+                        font-size: 1.2em;
+                        color: #999999;
+                    }
                 }
+                
             }
             .active{
                 color: #3377fe;
             }
             .active>a{
+                color: #3377fe;
+            }
+            .active>a span:nth-child(2){
                 color: #3377fe;
             }
         }
